@@ -7,9 +7,7 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {}
 const SearchInput: React.FC<Props> = ({ ...props }) => {
   return (
     <StyledWrapper>
-      <div className="top">
-        <Emoji>🔎</Emoji> Search
-      </div>
+      <div className="top">Search</div>
       <input
         className="mid"
         type="text"

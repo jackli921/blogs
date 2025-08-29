@@ -31,13 +31,11 @@ const TagList: React.FC<Props> = () => {
       })
     }
   }
-  const sortedTags = Object.keys(data).sort((a,b) => data[b] - data[a]);
+  const sortedTags = Object.keys(data).sort((a, b) => data[b] - data[a])
 
   return (
     <StyledWrapper>
-      <div className="top">
-        <Emoji>🏷️</Emoji> Tags
-      </div>
+      <div className="top">Tags</div>
       <div className="list">
         {sortedTags.map((tag) => (
           <a
@@ -91,7 +89,6 @@ const StyledWrapper = styled.div`
       margin-top: 0.25rem;
       margin-bottom: 0.25rem;
       border-radius: 0.75rem;
-      font-size: 0.875rem;
       line-height: 1.25rem;
       color: ${({ theme }) => theme.colors.gray10};
       flex-shrink: 0;
