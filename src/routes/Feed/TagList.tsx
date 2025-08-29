@@ -31,6 +31,7 @@ const TagList: React.FC<Props> = () => {
       })
     }
   }
+  const sortedTags = Object.keys(data).sort((a,b) => data[b] - data[a]);
 
   return (
     <StyledWrapper>
@@ -38,13 +39,13 @@ const TagList: React.FC<Props> = () => {
         <Emoji>🏷️</Emoji> Tags
       </div>
       <div className="list">
-        {Object.keys(data).map((key) => (
+        {sortedTags.map((tag) => (
           <a
-            key={key}
-            data-active={key === currentTag}
-            onClick={() => handleClickTag(key)}
+            key={tag}
+            data-active={tag === currentTag}
+            onClick={() => handleClickTag(tag)}
           >
-            {key}
+            {tag} ({data[tag]})
           </a>
         ))}
       </div>
