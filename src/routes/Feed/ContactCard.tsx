@@ -25,7 +25,7 @@ const ContactCard: React.FC = () => {
             <AiOutlineGithub className="icon" />
             <div className="name">github</div>
           </a>
-        )},
+        )}
         {/* {CONFIG.profile.email && (
           <a
             href={`mailto:${CONFIG.profile.email}`}

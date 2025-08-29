@@ -1,8 +1,8 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "jack",
-    image: "/avatar.jpg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    name: "Jack",
+    image: "/avatar.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     bio: "Still figuring out.",
     github: "jackli921",
   },
@@ -14,7 +14,7 @@ const CONFIG = {
   // ],
   // blog setting (required)
   blog: {
-    title: "jack's-blog",
+    title: "Keep On Flowing",
     description: "welcome to inside my head!",
     scheme: "dark", // 'light' | 'dark' | 'system'
   },
