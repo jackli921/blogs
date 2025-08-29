@@ -6,12 +6,12 @@ const CONFIG = {
     bio: "Still figuring out.",
     github: "jackli921",
   },
-  // projects: [
-  //   {
-  //     name: `morethan-log`,
-  //     href: "https://github.com/morethanmin/morethan-log",
-  //   },
-  // ],
+  projects: [
+    {
+      name: "",
+      href: "",
+    },
+  ],
   // blog setting (required)
   blog: {
     title: "Keep On Flowing",
